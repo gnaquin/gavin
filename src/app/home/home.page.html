@@ -1,16 +1,102 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Crawdad Handymen
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
   <div id="page">
+
     <div id="cover">
-      <img src="../../assets/pics/stock.jpg" />
+      <img src="../../assets/pics/cover_v2.jpeg" />
     </div>
+
+    <div class="navArrow">
+      <ion-icon name="chevron-down-outline"></ion-icon>
+    </div>
+
+    <div id="content">
+
+      <div id="blurbs">
+        <div id="blurb">
+          <h2>Why Choose Us?</h2>
+          <p>By choosing us for your next project not only are you hiring qualified and experienced handymen for a fair
+            price,
+            but you are also supporting hard-working college students. </p>
+        </div>
+
+        <div id="blurbTwo">
+          <h2>Where Are We Located?</h2>
+          <h3>
+            <ion-icon name="location-outline"></ion-icon> Lubbock, Texas
+          </h3>
+        </div>
+      </div>
+
+      <div id="book">
+
+        <ion-card class="contact">
+          <ion-card-header>
+            <ion-icon name="mail-outline"></ion-icon>
+            <ion-card-title>Get in Touch</ion-card-title>
+            <ion-card-subtitle>We're happy to help with inquries and estimates.
+            </ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-label position="floating">Name</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Message</ion-label>
+              <ion-textarea></ion-textarea>
+            </ion-item>
+          </ion-card-content>
+          <div class="contactBtn">
+            <ion-button fill="outline" color="tertiary">Submit</ion-button>
+          </div>
+        </ion-card>
+      </div>
+
+    </div>
+
+    <div id="bottom">
+
+      <div id="portfolio">
+        <swiper id="slides" [autoplay]="true" [keyboard]="true" [pagination]="false" [scrollbar]="true" [zoom]="true" [loop]="true">
+          <ng-template swiperSlide><img class="pics" src="../../assets/pics/image2.jpeg" /></ng-template>
+          <ng-template swiperSlide><img class="pics" src="../../assets/pics/image3.jpeg" /></ng-template>
+          <ng-template swiperSlide><img class="pics" src="../../assets/pics/image4.jpeg" /></ng-template>
+          <ng-template swiperSlide><img class="pics" src="../../assets/pics/image5.jpeg" /></ng-template>
+          <ng-template swiperSlide><img class="pics" src="../../assets/pics/image6.jpeg" /></ng-template>
+          <ng-template swiperSlide><img class="pics" src="../../assets/pics/image8.jpeg" /></ng-template>
+          <ng-template swiperSlide><img class="pics" src="../../assets/pics/image9.jpeg" /></ng-template>
+          <ng-template swiperSlide><img class="pics" src="../../assets/pics/image0.jpeg" /></ng-template>
+          <ng-template swiperSlide><img class="pics" src="../../assets/pics/image1.jpeg" /></ng-template>
+        </swiper>
+      </div>
+
+      <div id="about">
+        <h2>Who Are We?</h2>
+
+        <div class="profile">
+          <img src="../../assets/pics/clown1.jpg" />
+          <h2>Gavin Naquin</h2>
+          <p>passionate about the quality of his clown career</p>
+        </div>
+
+        <div class="profile" id="profileTwo">
+          <img src="../../assets/pics/clown2.jpg" />
+          <h2>Luffy the Clown</h2>
+          <p>believes kids don't know what they want from clowns.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <ion-footer>
+      <ion-toolbar>
+        <ion-title>Direct Contact Information</ion-title>
+        <ion-item>Email: clowns@clown.clown</ion-item>
+        <ion-item>Phone: 911 (in case Luffy snaps again)</ion-item>
+        <ion-item>Report Bug: aintgonnafixit@clown.clown</ion-item>
+      </ion-toolbar>
+    </ion-footer>
 
 
 
